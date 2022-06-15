@@ -5,7 +5,6 @@ from rest_framework.generics import get_object_or_404
 from rest_framework.relations import SlugRelatedField, StringRelatedField
 from rest_framework.serializers import (IntegerField, ModelSerializer,
                                         Serializer)
-
 from reviews.models import Category, Comment, Genre, Review, Title, User
 
 

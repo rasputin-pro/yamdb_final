@@ -1,5 +1,14 @@
 import uuid
 
+from api.filters import TitleFilter
+from api.permissions import IsAdmin, IsAdminModeratorAuthorOrReadOnly, ReadOnly
+from api.serializers import (CategorySerializer, CommentSerializer,
+                             GenreSerializer, ProfileSerializer,
+                             ReviewSerializer, SignUpSerializer,
+                             TitleReadSerializer, TitleWriteSerializer,
+                             TokenSerializer, UserSerializer)
+from api.utils import send_confirmation_code
+from api.viewsets import CreateListViewset
 from django.db import IntegrityError
 from django.db.models import Avg
 from rest_framework.decorators import action, api_view
@@ -11,16 +20,6 @@ from rest_framework.response import Response
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST
 from rest_framework.viewsets import ModelViewSet
 from rest_framework_simplejwt.tokens import RefreshToken
-
-from api.filters import TitleFilter
-from api.permissions import IsAdmin, IsAdminModeratorAuthorOrReadOnly, ReadOnly
-from api.serializers import (CategorySerializer, CommentSerializer,
-                             GenreSerializer, ProfileSerializer,
-                             ReviewSerializer, SignUpSerializer,
-                             TitleReadSerializer, TitleWriteSerializer,
-                             TokenSerializer, UserSerializer)
-from api.utils import send_confirmation_code
-from api.viewsets import CreateListViewset
 from reviews.models import Category, Genre, Review, Title, User
 
 

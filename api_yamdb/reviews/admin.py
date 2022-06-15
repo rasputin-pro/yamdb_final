@@ -4,7 +4,6 @@ from django.utils.translation import ugettext_lazy as _
 
 from .models import Category, Genre, Title, User
 
-
 admin.site.register(Category)
 
 admin.site.register(Genre)
