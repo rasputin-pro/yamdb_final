@@ -130,6 +130,10 @@ POST-запрос на специальный эндпоинт `/api/v1/users/` 
 документация.
 
 
+## Демонстрация проекта
+Проект развёрнут по адресу: [http://yamdb.rasputin.pro/redoc/](http://yamdb.rasputin.pro/redoc/)
+
+
 ## Над проектом работали:
 - [Андрей Распутин](https://github.com/rasputin-pro)
 - [Кирилл Сухарев](https://github.com/Soliton80)
